@@ -1,14 +1,14 @@
-class Song 
+class Song
   attr_reader :name
 
   @@all = []
 
   def initialize(name)
     @name = name
-    self.all << self 
+    self.all << self
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 end
