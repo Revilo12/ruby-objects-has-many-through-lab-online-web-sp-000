@@ -1,5 +1,4 @@
 class  Artist
-  attr_accessor
   attr_reader :name
 
   @@all = []
@@ -13,6 +12,4 @@ class  Artist
     @@all
   end
 
-
-
-  
+  def songs
