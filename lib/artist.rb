@@ -13,3 +13,7 @@ class  Artist
   end
 
   def songs
+    Song.all.select {|song| song.aritst == self}
+  end
+
+end
