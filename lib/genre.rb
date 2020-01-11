@@ -18,7 +18,7 @@ class Genre
   end
 
   def artists
-    Artsit.all.select {|artist| artist.genres.include?(self)}
+    Artist.all.select {|artist| artist.genres.include?(self)}
   end
 
 end
