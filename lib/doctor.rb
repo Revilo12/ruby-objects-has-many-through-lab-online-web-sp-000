@@ -21,7 +21,7 @@ class Doctor
   end
 
   def patients
-    Patient.all.select {|patient| patient.doctors.include?(self)}
+    (self.appointments.collect {|appointment| appointment.patient}).uniq
   end
 
 end
